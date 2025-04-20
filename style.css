@@ -1,206 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Tangerine&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
+/* ====== GOOGLE FONTS ====== */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&family=Open+Sans:wght@400;600&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;700&display=swap');
 
+/* ====== GENERAL STYLING ====== */
 body {
-    text-align: center;
-    background-color: #add8e6;
-    font-family: 'Open Sans', sans-serif;
-    color: #333333;
+  font-family: 'Poppins', 'Open Sans', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 20px;
 }
 
-h1 {
-    color: limegreen;
-    font-size: 100px;
-    font-weight: bold;
-    font-family: 'Playfair Display', serif;
-}
-
-h2 {
-    font-family: 'Tangerine', serif;
-    font-size: 48px;
-    color: #555555;
-}
-
-p {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-}
-
-img {
-    border: none;
-}
-
-a {
-    text-decoration: none;
-    color: #008cba;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
-}
-
-a:hover {
-    color: limegreen;
-    text-decoration: underline;
-}
-
-@media only screen and (max-width: 767px) {
-    .a {
-        flex-direction: column;
-    }
-}
-
-footer {
-    background-color: #AFEEEE;
-    color: paleblue;
-    padding: 20px;
-    font-family: 'Open Sans', sans-serif;
-}
-
+/* ====== NAVIGATION BAR ====== */
 nav {
-    background-color: #333333;
-    color: white;
-    padding: 10px;
-    font-family: 'Playfair Display', serif;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    font-size: 18px;
-}
-
-nav a:hover {
-    color: limegreen;
-    text-decoration: underline;
-}
-
-
-/* Importing Google Font */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
-
-/* General Page Styling */
-body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 18px;
-    text-align: center;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
-}
-
-/* ====== NAV MENU ====== */
-nav {
-    background-color: #003366; /* Deep Blue */
-    padding: 15px;
+  background-color: #003366; /* Deep Blue */
+  padding: 15px;
+  font-family: 'Playfair Display', serif;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav ul li a {
-    color: gold;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
+  color: gold;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+  color: limegreen;
 }
 
 /* ====== HEADINGS ====== */
 h1 {
-    font-size: 36px;
-    font-weight: bold;
-    color: #003366; /* Deep Blue */
+  font-size: 48px;
+  font-weight: bold;
+  color: #003366;
+  font-family: 'Playfair Display', serif;
 }
 
 h2 {
-    font-size: 24px;
-    font-weight: bold;
-    color: #cc9900; /* Gold */
+  font-size: 36px;
+  color: #cc9900;
+  font-family: 'Tangerine', cursive;
 }
 
-/* ====== IMAGE CLASS ====== */
+/* ====== PARAGRAPH STYLING ====== */
+p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+/* ====== LINKS ====== */
+a {
+  text-decoration: none;
+  color: #008cba;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a:hover {
+  color: limegreen;
+  text-decoration: underline;
+}
+
+/* ====== IMAGE STYLING ====== */
 .image-style {
-    max-width: 400px;
-    height: auto;
-    display: block;
-    margin: 20px auto;
-    border-radius: 10px;
-    border: 3px solid #cc9900; /* Gold Border */
-}
-
-/* ====== TEXT CLASS ====== */
-.text-style {
-    color: #333;
-    font-size: 18px;
-    line-height: 1.6;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  border: 3px solid #cc9900;
 }
 
 /* ====== FOOTER ====== */
 footer {
-    background-color: #003366;
-    color: white;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /* ====== MEDIA QUERIES ====== */
 
-/* 📱 Mobile (default styles apply) */
+/* Mobile first (default above) */
 
-/* 🔹 555px */
-@media (max-width: 555px) {
-    body {
-        font-size: 16px;
-    }
-
-    nav ul li a {
-        font-size: 18px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    h2 {
-        font-size: 20px;
-    }
-
-    .image-style {
-        max-width: 300px;
-    }
-}
-
-/* 🔹 800px */
-@media (max-width: 800px) {
-    body {
-        font-size: 17px;
-    }
-
-    .image-style {
-        max-width: 350px;
-    }
-}
-
-/* 🔹 1200px */
+/* 🔹 Tablets and small desktops */
 @media (max-width: 1200px) {
-    nav {
-        padding: 10px;
-    }
+  nav {
+    padding: 10px;
+  }
 
-    nav ul li a {
-        font-size: 18px;
-    }
+  nav ul li a {
+    font-size: 18px;
+  }
+}
+
+/* 🔹 Medium screens */
+@media (max-width: 800px) {
+  body {
+    font-size: 17px;
+  }
+
+  .image-style {
+    max-width: 350px;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+/* 🔹 Small screens */
+@media (max-width: 555px) {
+  body {
+    font-size: 16px;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li a {
+    font-size: 18px;
+  }
+
+  .image-style {
+    max-width: 300px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
 }
 
