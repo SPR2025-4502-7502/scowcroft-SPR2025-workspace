@@ -161,3 +161,157 @@ footer {
   }
 }
 
+/* ====== GENERAL STYLING ====== */
+body {
+    font-family: 'Arial', sans-serif;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #333333;
+}
+
+/* ====== NAVIGATION MENU ====== */
+nav {
+    background-color: #003366;
+    padding: 15px;
+    font-family: 'Arial', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: gold;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: limegreen;
+}
+
+/* ====== HEADINGS ====== */
+h1 {
+    font-size: 36px;
+    color: #003366;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    color: #cc9900;
+    margin-top: 30px;
+    text-align: left;
+}
+
+/* ====== PARAGRAPH STYLING ====== */
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* ====== IMAGE STYLING ====== */
+.image-style {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ====== FOOTER ====== */
+footer {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* ====== MEDIA QUERIES ====== */
+
+/* Mobile (default) */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .image-style {
+        max-width: 100%;
+    }
+}
+
+/* For 555px devices */
+@media (max-width: 555px) {
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* For 800px devices */
+@media (max-width: 800px) {
+    body {
+        font-size: 17px;
+    }
+
+    .image-style {
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+}
