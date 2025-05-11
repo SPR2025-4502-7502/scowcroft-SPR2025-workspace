@@ -2,42 +2,94 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <title>Jessie's home page</title>
+    <title>Jessie's Home Page</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        .food-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .food-list li {
+            background-color: #cc9900;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .headshot {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            border: 3px solid #cc9900;
+            margin: 20px auto;
+            display: block;
+        }
+
+        .main-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding-bottom: 60px; /* to make room for footer */
+        }
+
+        footer a {
+            color: gold;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: limegreen;
+        }
+    </style>
 </head>
 <body>
 
+    <a href="#content" class="skip-link">Skip to content</a>
+
     <nav>
-        <a href="https://jessicascowcrofttv.com" target="_blank">Jessica's TV Site</a>
-        <a href="https://journalism.missouri.edu" target="_blank">Mizzou Journalism</a>
-        <a href="list1.html">List 1</a>
-        <a href="list2.html">List 2</a>
-        <a href="gallery.html">Gallery</a>
-
-    </nav>
-    
-    <h1>My first Website</h1>
-
-    <img src="img/KOMUPHOTO.jpg" alt="Here is a recent headshot I got at KOMU 8 News" style="width:500px;height:500px">
-
-    <a href="mailto:scowcroftjessie@gmail.com">
-        <h2>scowcroftjessie@gmail.com</h2>
-    </a>
-
-    <p> I grew up in Kansas, but I didn't enjoy red meat very much. I always liked seafood more. I also love Italian food. Outside of food, I like to watch TV and hang out with my friends. </p>
-    <p> Here are some of my favorite foods. </p>
-
-    <div>
         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="list1.html">List 1</a></li>
+            <li><a href="list2.html">List 2</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main id="content" class="main-content">
+        <h1>My First Website</h1>
+
+        <img src="img/KOMUPHOTO.jpg" alt="Here is a recent headshot I got at KOMU 8 News" class="headshot">
+
+        <a href="mailto:scowcroftjessie@gmail.com">
+            <h2>scowcroftjessie@gmail.com</h2>
+        </a>
+
+        <p>I grew up in Kansas, but I didn't enjoy red meat very much. I always liked seafood more. I also love Italian food. Outside of food, I like to watch TV and hang out with my friends.</p>
+
+        <p>Here are some of my favorite foods:</p>
+
+        <ul class="food-list">
             <li>Pasta</li>
             <li>Cookies</li>
             <li>Sandwich</li>
             <li>Crab</li>
             <li>Chocolate</li>
         </ul>
-    </div>
+    </main>
+
+    <footer>
+        <p>
+            <a href="https://jessicascowcrofttv.com" target="_blank">Jessica's TV Site</a> |
+            <a href="https://journalism.missouri.edu" target="_blank">Mizzou Journalism</a>
+        </p>
+        <p>&copy; 2025 Jessie Scowcroft</p>
+    </footer>
 
 </body>
 </html>
-
-
